@@ -1,5 +1,5 @@
 {
-  "active_plan": "/home/handora/Project/money/.sisyphus/plans/monetization-content-pipeline.md",
+  "active_plan": null,
   "started_at": "2026-02-16T08:07:10.770Z",
   "session_ids": [
     "ses_39ad10e31ffecp4ls0YSDIuddW",
@@ -7,6 +7,6 @@
     "ses_39a5003e7ffeLDnAvdzY5Jd7VR",
     "ses_39a4cffe4ffe3k1t7Lm0NqnVR4"
   ],
-  "plan_name": "monetization-content-pipeline",
+  "plan_name": null,
   "agent": "atlas"
 }

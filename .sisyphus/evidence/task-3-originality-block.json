@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "originality_record": "/home/handora/Project/money/build/task3/blocked/originality/draft-e453142e1274.json",
+    "prompt_pack": "/home/handora/Project/money/build/task3/blocked/prompt_pack.json",
+    "script_draft": "/home/handora/Project/money/build/task3/blocked/script_draft.json",
+    "summary_pack": "/home/handora/Project/money/build/task3/blocked/summary_pack.json"
+  },
+  "queue_state": "not_enqueued",
+  "rejection": {
+    "code": "BLOCKED_ORIGINALITY",
+    "state": "rejected_originality"
+  },
+  "result_code": "BLOCKED_ORIGINALITY",
+  "scenario": "low_originality_draft_rejected",
+  "script_draft": {
+    "draft_id": "draft-e453142e1274",
+    "originality_threshold": 0.8,
+    "similarity_score": 1.0,
+    "similarity_trace_id": "trace-923e54f77af7"
+  },
+  "status": "rejected_originality"
+}

@@ -1,0 +1,41 @@
+{
+  "input": {
+    "declared_categories": [
+      "gambling_promotion"
+    ],
+    "locale": "EN-SEA",
+    "similarity_score": 0.35
+  },
+  "result": {
+    "language_tag": "en-SG",
+    "locale": "EN-SEA",
+    "policy": {
+      "block_code": "BLOCKED_POLICY::POLICY_BLOCKED_CATEGORY::GAMBLING_SOLICITATION",
+      "categories": [
+        "gambling_promotion"
+      ],
+      "originality_threshold": null,
+      "policy_code": "POLICY_BLOCKED_CATEGORY",
+      "reason_code": "GAMBLING_SOLICITATION",
+      "result_code": "BLOCKED_POLICY",
+      "similarity_score": 0.35,
+      "status": "blocked_policy"
+    },
+    "result_code": "BLOCKED_POLICY",
+    "status": "blocked_policy",
+    "transcreation_notes": "Southeast Asia transcreation with practical, low-risk framing.",
+    "variant": {
+      "draft_id": "draft-004-block",
+      "locale": "EN-SEA",
+      "localized_script": "SEA creator note: Crypto steady win formula for this weekend\nUse this gambling system and you will always beat the casino Focus on low-risk steps that fit mobile-first viewers.\nTry this in your next posting cycle: Start now and lock steady returns.",
+      "policy_categories": [
+        "gambling_promotion"
+      ],
+      "policy_result_code": "BLOCKED_POLICY",
+      "variant_id": "draft-004-block-en-sea",
+      "voice_style": "conversational"
+    },
+    "voiceover": null
+  },
+  "scenario": "en_sea_localization_policy_block"
+}

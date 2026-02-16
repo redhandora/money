@@ -1,0 +1,33 @@
+{
+  "artifacts": {
+    "originality_record": "build/task3/manual-youtube-hot-7T-ISTKWQws/originality/draft-7c35455c110c.json",
+    "prompt_pack": "build/task3/manual-youtube-hot-7T-ISTKWQws/prompt_pack.json",
+    "script_draft": "build/task3/manual-youtube-hot-7T-ISTKWQws/script_draft.json",
+    "summary_pack": "build/task3/manual-youtube-hot-7T-ISTKWQws/summary_pack.json"
+  },
+  "result": {
+    "result_code": "PASS",
+    "status": "ready_for_review"
+  },
+  "scene_prompts": [
+    {
+      "beat_index": 1,
+      "prompt_text": "Generate an original hook scene for topic 'youtube shorts trend discovery in 2026' using this beat: start by scanning shorts feed patterns and identify repeated high retention hooks. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "hook"
+    },
+    {
+      "beat_index": 2,
+      "prompt_text": "Generate an original body scene for topic 'youtube shorts trend discovery in 2026' using this beat: validate trend candidates with niche relevance and fast repeatable production format. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "body"
+    },
+    {
+      "beat_index": 3,
+      "prompt_text": "Generate an original cta scene for topic 'youtube shorts trend discovery in 2026' using this beat: close with a practical upload test loop and metrics check for rapid iteration. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "cta"
+    }
+  ],
+  "source_title": "How To Find Viral YouTube Shorts Trends In 2026 #shorts",
+  "source_url": "https://www.youtube.com/shorts/7T-ISTKWQws",
+  "source_video_id": "7T-ISTKWQws",
+  "trend_candidate_id": "trend-e58e53d1c7b2"
+}

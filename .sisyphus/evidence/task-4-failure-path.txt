@@ -1,0 +1,7 @@
+Scenario: Gate failure path is enforceable
+file_check=PASS
+--- grep -n "If strike_rate" ---
+69:If strike_rate rises to the hard-stop band, do not resume monetization or rollout until strike_rate returns to <0.20% for 14 consecutive days and HITL sign-off is logged.
+pause_distribution_present=PASS
+rollback_present=PASS
+overall=PASS

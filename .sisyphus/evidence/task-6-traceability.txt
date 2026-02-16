@@ -1,0 +1,13 @@
+Scenario: Final recommendation traceability check
+Date: 2026-02-16T14:01:52+08:00
+Step 1: test file exists
+PASS: file exists
+Step 2: required sections
+## Recommended Path
+## Why Not the Alternatives
+## Rollout Phases
+## Rollback Triggers
+Section count: 4
+Step 3: source traceability count
+Source-linked bullet count: 37
+PASS: >=8 source-linked bullets

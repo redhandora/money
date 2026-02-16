@@ -1,0 +1,80 @@
+# Risk Gates, Thresholds, and HITL Escalation Policy (Task 4)
+
+Updated: 2026-02-16
+Mode: Balanced risk posture (moderate HITL + phased canary)
+Scope: Strategy controls only; no implementation or deployment tasks.
+
+## Control boundary (publish vs monetize must remain separate)
+
+- `publish_eligibility` controls whether localized assets can be distributed.
+- `monetization_eligibility` controls whether distributed assets can be monetized.
+- A lane can be `publish_eligibility=auto-pass` and `monetization_eligibility=HITL-review` at the same time; monetization remains disabled until review is cleared.
+- Any `hard-stop` in publish controls blocks both publish and monetization for the affected lane.
+
+## Threshold schema (required keys and escalation states)
+
+| key | Unit and measurement window | auto-pass | HITL-review | hard-stop |
+|---|---|---|---|---|
+| rights_confidence | Probability [0,1] per asset-locale-platform at rights/provenance gate | >=0.985 | >=0.960 and <0.985 | <0.960 |
+| term_adherence | Ratio [0,1] of mandatory glossary terms correctly rendered, sampled per release batch | >=0.970 | >=0.940 and <0.970 | <0.940 |
+| av_sync_ms | Absolute audio-video drift (P95) on QA sample clips, in milliseconds per release batch | <=120 ms | >120 ms and <=220 ms | >220 ms |
+| strike_rate | Percent of localized published assets with platform strike events, trailing 30 days per platform lane | <0.20% | >=0.20% and <0.50% | >=0.50% |
+| rollback_mttr | Minutes to restore last known-good pipeline after stop-triggered incidents, rolling 30-day median | <=30 min | >30 min and <=60 min | >60 min |
+
+Canonical escalation states used in this policy:
+
+- `auto-pass`
+- `HITL-review`
+- `hard-stop`
+
+## Gate decision logic (numeric go/no-go)
+
+1. Compute each key state from the threshold schema table.
+2. Determine `publish_eligibility` state:
+   - `auto-pass`: `rights_confidence`, `term_adherence`, and `av_sync_ms` are all `auto-pass`.
+   - `HITL-review`: none of the three publish keys are `hard-stop`, and at least one is `HITL-review`.
+   - `hard-stop`: any of the three publish keys is `hard-stop`.
+3. Determine `monetization_eligibility` state (kept separate from publish control):
+   - `auto-pass`: `publish_eligibility=auto-pass` and `strike_rate=auto-pass`.
+   - `HITL-review`: `publish_eligibility` is not `hard-stop` and `strike_rate=HITL-review`.
+   - `hard-stop`: `strike_rate=hard-stop` or `publish_eligibility=hard-stop`.
+4. Determine rollout gate state:
+   - `auto-pass`: `publish_eligibility=auto-pass`, `monetization_eligibility=auto-pass`, and `rollback_mttr=auto-pass`.
+   - `HITL-review`: no hard-stop exists and at least one of `publish_eligibility`, `monetization_eligibility`, or `rollback_mttr` is `HITL-review`.
+   - `hard-stop`: any of `publish_eligibility`, `monetization_eligibility`, or `rollback_mttr` is `hard-stop`.
+
+## Escalation matrix (balanced mode, enforceable actions)
+
+| State | Publish control action | Monetization control action | Rollout action |
+|---|---|---|---|
+| auto-pass | Allow scheduled distribution for approved lanes. | Keep monetization enabled. | Permit next canary/scale transition. |
+| HITL-review | `pause_distribution` for affected candidate lane until reviewer disposition (SLA <=4 hours); keep last stable lane active. | Keep monetization disabled for affected lane until reviewer approval. | Hold phase advancement; no expansion while review is open. |
+| hard-stop | Immediate `pause_distribution` for affected lane and batch. | Immediate monetization disable on affected lane. | Immediate `rollback` to last known-good workflow/profile; block phase advancement. |
+
+## Balanced-mode HITL triggers
+
+- Trigger `HITL-review` when `rights_confidence` is >=0.960 and <0.985.
+- Trigger `HITL-review` when `term_adherence` is >=0.940 and <0.970.
+- Trigger `HITL-review` when `av_sync_ms` is >120 ms and <=220 ms.
+- Trigger `HITL-review` when `strike_rate` is >=0.20% and <0.50%.
+- Trigger `HITL-review` when `rollback_mttr` is >30 min and <=60 min after any hard-stop incident.
+
+## Hard-stop conditions and failure paths
+
+- If `strike_rate` is >=0.50% (trailing 30 days, per platform lane), set `monetization_eligibility=hard-stop`, execute `pause_distribution` within 15 minutes for the affected lane, and execute `rollback` to the last known-good workflow/profile.
+- If `rights_confidence` is <0.960 for any release batch, set `publish_eligibility=hard-stop`, execute `pause_distribution` for the affected batch, and execute `rollback` for any active canary release built from the failing profile.
+- If `term_adherence` is <0.940 or `av_sync_ms` is >220 ms in canary, set `publish_eligibility=hard-stop`, execute `pause_distribution`, and execute `rollback` before any additional distribution.
+- If `rollback_mttr` exceeds 60 minutes on the most recent hard-stop incident, set rollout gate to `hard-stop` and block phase expansion until two consecutive incident drills restore `rollback_mttr` to <=30 minutes.
+
+If strike_rate rises to the hard-stop band, do not resume monetization or rollout until strike_rate returns to <0.20% for 14 consecutive days and HITL sign-off is logged.
+
+## Threshold rationale and traceability
+
+- Source: `.sisyphus/research/policy-snapshot-2026Q1.md` (rights/originality and publish-vs-monetize separation constraints).
+- Source: `.sisyphus/research/comparables-scorecard.csv` (balanced-mode risk posture and quality/compliance trade-off context).
+- Source: `.sisyphus/research/toolchain-matrix.md` (A/V drift risk, quality drift, incident and fallback/rollback operational framing).
+
+## Assumptions and limitations
+
+- Thresholds are strategy-level policy numbers for Task 4 planning and are designed to be auditable with scripted checks.
+- Plan reference `.sisyphus/drafts/video-localization-research.md` is not present in workspace; thresholds are therefore anchored to available Task 1-3 artifacts listed above.

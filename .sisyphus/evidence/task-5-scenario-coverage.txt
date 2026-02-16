@@ -1,0 +1,7 @@
+Scenario: Economics model has scenario coverage
+File: .sisyphus/research/unit-economics-and-slo.md
+Check: required scenarios=['Best Case', 'Base Case', 'Worst Case']
+Check: required tracks=['Track: EN', 'Track: ZH']
+Counts: {'Best Case': 2, 'Base Case': 7, 'Worst Case': 2}
+Counts: {'Track: EN': 7, 'Track: ZH': 9}
+Result: PASS

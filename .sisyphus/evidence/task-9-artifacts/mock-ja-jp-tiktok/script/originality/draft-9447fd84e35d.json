@@ -1,0 +1,11 @@
+{
+  "candidate_id": "trend-task9-mock-ja-jp-tiktok",
+  "draft_id": "draft-9447fd84e35d",
+  "locale": "JA-JP",
+  "originality_score": 0.7872,
+  "originality_threshold": 0.8,
+  "reference_count": 6,
+  "result_code": "PASS",
+  "similarity_score": 0.2128,
+  "similarity_trace_id": "trace-34d07ca75977"
+}

@@ -1,0 +1,128 @@
+{
+  "attempt_trace": [
+    {
+      "attempt_number": 1,
+      "cost_usd": 0.1,
+      "daily_spend_usd": 0.1,
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "seedance_profile": null,
+      "stage": "trend_ingestion",
+      "status": "success",
+      "workflow_cost_usd": 0.1
+    },
+    {
+      "attempt_number": 1,
+      "cost_usd": 0.2,
+      "daily_spend_usd": 0.3,
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "seedance_profile": null,
+      "stage": "script_generation",
+      "status": "success",
+      "workflow_cost_usd": 0.3
+    },
+    {
+      "attempt_number": 1,
+      "cost_usd": 0.25,
+      "daily_spend_usd": 0.55,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "seedance_profile": "seedance-quality-v1",
+      "stage": "scene_generation",
+      "status": "retryable_failure",
+      "workflow_cost_usd": 0.55
+    },
+    {
+      "attempt_number": 2,
+      "cost_usd": 0.25,
+      "daily_spend_usd": 0.8,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "seedance_profile": "seedance-balanced-v1",
+      "stage": "scene_generation",
+      "status": "retryable_failure",
+      "workflow_cost_usd": 0.8
+    },
+    {
+      "attempt_number": 3,
+      "cost_usd": 0.25,
+      "daily_spend_usd": 1.05,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "seedance_profile": "seedance-speed-v1",
+      "stage": "scene_generation",
+      "status": "retryable_failure",
+      "workflow_cost_usd": 1.05
+    },
+    {
+      "attempt_number": 4,
+      "cost_usd": 0.25,
+      "daily_spend_usd": 1.3,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "seedance_profile": "seedance-speed-v1",
+      "stage": "scene_generation",
+      "status": "retryable_failure",
+      "workflow_cost_usd": 1.3
+    }
+  ],
+  "checks": {
+    "backoff_is_exponential": true,
+    "profile_fallback_order_is_deterministic": true,
+    "publish_not_attempted": true,
+    "retry_ceiling_respected": true,
+    "state_is_failed_retry_exhausted": true
+  },
+  "result": {
+    "backoff_seconds": [
+      2,
+      4,
+      8
+    ],
+    "reason_code": "RETRY_CEILING_REACHED",
+    "result_code": "FAILED_RETRY_EXHAUSTED",
+    "retry_count": 3,
+    "scene_profile_attempts": [
+      "seedance-quality-v1",
+      "seedance-balanced-v1",
+      "seedance-speed-v1",
+      "seedance-speed-v1"
+    ],
+    "state": "failed_retry_exhausted",
+    "state_trace": [
+      "created",
+      "trend_ingested",
+      "script_generated",
+      "failed_retry_exhausted"
+    ],
+    "status": "failed"
+  },
+  "retry_trace": [
+    {
+      "backoff_seconds": 2,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "retry_index": 1,
+      "seedance_profile": "seedance-quality-v1",
+      "stage": "scene_generation"
+    },
+    {
+      "backoff_seconds": 4,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "retry_index": 2,
+      "seedance_profile": "seedance-balanced-v1",
+      "stage": "scene_generation"
+    },
+    {
+      "backoff_seconds": 8,
+      "reason_code": "SEEDANCE_TIMEOUT",
+      "result_code": "SEEDANCE_TIMEOUT",
+      "retry_index": 3,
+      "seedance_profile": "seedance-speed-v1",
+      "stage": "scene_generation"
+    }
+  ],
+  "scenario": "retry_ceiling_prevents_runaway"
+}

@@ -1,0 +1,9 @@
+{
+  "asset_id": "d6998f024df6",
+  "duration_ms": 1800,
+  "engine": "seedance",
+  "prompt_id": "prompt-bb78ca58af51",
+  "scene_asset_uri": "seedance://prompt-pack-782523e69e70/d6998f024df6.mp4",
+  "seedance_profile": "seedance-default-v1",
+  "source_prompt_text": "Generate an original body scene for topic 'budget meal prep sequence' using this beat: batch prep two protein options to cut weekday spend drift. Keep visuals transformed and avoid source shot reuse."
+}

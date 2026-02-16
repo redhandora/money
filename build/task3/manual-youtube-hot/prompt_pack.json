@@ -1,0 +1,89 @@
+{
+  "beat_windows": [
+    {
+      "beat_index": 1,
+      "end_ms": 1200,
+      "start_ms": 0
+    },
+    {
+      "beat_index": 2,
+      "end_ms": 3200,
+      "start_ms": 1200
+    },
+    {
+      "beat_index": 3,
+      "end_ms": 5000,
+      "start_ms": 3200
+    }
+  ],
+  "candidate_id": "trend-c16622f93833",
+  "locale": "EN-US",
+  "prompt_pack_id": "prompt-pack-0c7f3da58009",
+  "quality_checks": {
+    "ambiguity_score": 0.0,
+    "ambiguity_threshold": 0.15,
+    "policy_pass": true,
+    "policy_violations": [],
+    "schema_valid": true
+  },
+  "rhythm_fidelity_target": "medium_high",
+  "scene_prompts": [
+    {
+      "beat_index": 1,
+      "beat_window_ms": {
+        "end_ms": 1200,
+        "start_ms": 0
+      },
+      "prompt_id": "prompt-699cdcd210b2",
+      "prompt_text": "Generate an original hook scene for topic 'youtube shorts hot trend: budget meal prep in 15 seconds' using this beat: flash grocery receipt comparison and reveal weekly savings instantly. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "hook",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1200
+    },
+    {
+      "beat_index": 2,
+      "beat_window_ms": {
+        "end_ms": 3200,
+        "start_ms": 1200
+      },
+      "prompt_id": "prompt-72a1ebdf8105",
+      "prompt_text": "Generate an original body scene for topic 'youtube shorts hot trend: budget meal prep in 15 seconds' using this beat: batch prep two protein options with per serving cost captions and timer cuts. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "body",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 2000
+    },
+    {
+      "beat_index": 3,
+      "beat_window_ms": {
+        "end_ms": 5000,
+        "start_ms": 3200
+      },
+      "prompt_id": "prompt-7e807614cfa7",
+      "prompt_text": "Generate an original cta scene for topic 'youtube shorts hot trend: budget meal prep in 15 seconds' using this beat: end with one tap shopping list call to action and weekly reset reminder. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "cta",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1800
+    }
+  ],
+  "schema_version": "2026-02-16",
+  "seedance_profile_id": "seedance-default-v1",
+  "shot_duration_constraints": {
+    "max_jump_ratio": 2.5,
+    "max_ms": 1800,
+    "max_whiplash_per_8s": 2,
+    "min_ms": 700
+  },
+  "source_summary_id": "summary-fc74de482bb7"
+}

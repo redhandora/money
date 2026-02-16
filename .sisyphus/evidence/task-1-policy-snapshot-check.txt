@@ -1,0 +1,12 @@
+[cmd] test -f .sisyphus/research/policy-snapshot-2026Q1.md
+PASS file exists
+
+[cmd] grep -E "^## (YouTube|TikTok|Meta|Publish vs Monetize)" .sisyphus/research/policy-snapshot-2026Q1.md
+## YouTube
+## TikTok
+## Meta
+## Publish vs Monetize
+
+[cmd] grep -E "Fetched: 20[0-9]{2}-[0-9]{2}-[0-9]{2}" .sisyphus/research/policy-snapshot-2026Q1.md | wc -l
+dated_line_count=11
+PASS dated citation minimum met (>=6)

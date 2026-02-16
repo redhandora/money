@@ -1,0 +1,33 @@
+{
+  "engine": "seedance",
+  "prompt_pack_id": "prompt-pack-1158d9256744",
+  "result_code": "PASS",
+  "scene_assets": [
+    {
+      "beat_index": 1,
+      "duration_ms": 1300,
+      "prompt_id": "prompt-ed7b4c099123",
+      "scene_asset_path": "/home/handora/Project/money/.sisyphus/evidence/task-9-artifacts/live-safe-ja-jp-youtube/scenes/scene_assets/965a6606dc43.json",
+      "scene_asset_uri": "seedance://prompt-pack-1158d9256744/965a6606dc43.mp4",
+      "seedance_profile": "seedance-balanced-v1"
+    },
+    {
+      "beat_index": 2,
+      "duration_ms": 1600,
+      "prompt_id": "prompt-aab36dfe8f67",
+      "scene_asset_path": "/home/handora/Project/money/.sisyphus/evidence/task-9-artifacts/live-safe-ja-jp-youtube/scenes/scene_assets/b0f5f42fba4a.json",
+      "scene_asset_uri": "seedance://prompt-pack-1158d9256744/b0f5f42fba4a.mp4",
+      "seedance_profile": "seedance-balanced-v1"
+    },
+    {
+      "beat_index": 3,
+      "duration_ms": 1400,
+      "prompt_id": "prompt-52fd868dc592",
+      "scene_asset_path": "/home/handora/Project/money/.sisyphus/evidence/task-9-artifacts/live-safe-ja-jp-youtube/scenes/scene_assets/221343ff2b1d.json",
+      "scene_asset_uri": "seedance://prompt-pack-1158d9256744/221343ff2b1d.mp4",
+      "seedance_profile": "seedance-balanced-v1"
+    }
+  ],
+  "seedance_profile": "seedance-balanced-v1",
+  "status": "generated"
+}

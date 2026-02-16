@@ -1,0 +1,13 @@
+{
+  "request": {
+    "path": "/publish",
+    "variant_id": "variant-en-us-001"
+  },
+  "response": {
+    "error_code": "HUMAN_APPROVAL_REQUIRED",
+    "http_status": 409,
+    "message": "human approval is required before publish",
+    "result_code": "HUMAN_APPROVAL_REQUIRED"
+  },
+  "scenario": "publish_without_approval_is_blocked"
+}

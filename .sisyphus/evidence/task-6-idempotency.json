@@ -1,0 +1,63 @@
+{
+  "checks": {
+    "platform_post_ids_stable": true,
+    "receipt_count_stable": true,
+    "same_response_on_repeat": true,
+    "single_platform_receipt_set_persisted": true
+  },
+  "first_response": {
+    "idempotency_key": "publish-task6-idempotent-001",
+    "platform_receipts": [
+      {
+        "idempotency_key": "publish-task6-idempotent-001",
+        "platform": "youtube",
+        "platform_post_id": "youtube-post-cc8c41d3260d",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:01:00Z",
+        "receipt_id": "receipt-ce4891aca4d4",
+        "variant_id": "variant-task6-idempotency"
+      },
+      {
+        "idempotency_key": "publish-task6-idempotent-001",
+        "platform": "tiktok",
+        "platform_post_id": "tiktok-post-345a6401a01d",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:01:00Z",
+        "receipt_id": "receipt-10cff7b63c20",
+        "variant_id": "variant-task6-idempotency"
+      }
+    ],
+    "result_code": "PASS",
+    "scheduled_for": "2026-02-16T12:00:00Z",
+    "status": "published",
+    "variant_id": "variant-task6-idempotency"
+  },
+  "scenario": "publish_is_idempotent_by_idempotency_key",
+  "second_response": {
+    "idempotency_key": "publish-task6-idempotent-001",
+    "platform_receipts": [
+      {
+        "idempotency_key": "publish-task6-idempotent-001",
+        "platform": "youtube",
+        "platform_post_id": "youtube-post-cc8c41d3260d",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:01:00Z",
+        "receipt_id": "receipt-ce4891aca4d4",
+        "variant_id": "variant-task6-idempotency"
+      },
+      {
+        "idempotency_key": "publish-task6-idempotent-001",
+        "platform": "tiktok",
+        "platform_post_id": "tiktok-post-345a6401a01d",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:01:00Z",
+        "receipt_id": "receipt-10cff7b63c20",
+        "variant_id": "variant-task6-idempotency"
+      }
+    ],
+    "result_code": "PASS",
+    "scheduled_for": "2026-02-16T12:00:00Z",
+    "status": "published",
+    "variant_id": "variant-task6-idempotency"
+  }
+}

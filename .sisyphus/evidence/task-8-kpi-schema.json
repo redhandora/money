@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "gross_and_net_are_distinct": true,
+    "kpi_fields_are_numeric": true,
+    "window_bounds_are_trailing_7_days": true,
+    "window_days_is_fixed_to_7": true
+  },
+  "query": {
+    "as_of_date": "2026-02-16",
+    "locale": "EN-US",
+    "platform": "youtube"
+  },
+  "result": {
+    "approval_rate": 0.857143,
+    "event_count": 2,
+    "gross_revenue": 340.0,
+    "locale": "EN-US",
+    "net_revenue": 277.0,
+    "platform": "youtube",
+    "publish_success_rate": 0.866667,
+    "result_code": "PASS",
+    "rpm_proxy": 1.538889,
+    "status": "ok",
+    "window_days": 7,
+    "window_end_date": "2026-02-16",
+    "window_start_date": "2026-02-10"
+  },
+  "task": "task-8-weekly-revenue-kpi"
+}

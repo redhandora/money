@@ -1,0 +1,9 @@
+{
+  "asset_id": "68745f16da0c",
+  "duration_ms": 1600,
+  "engine": "seedance",
+  "prompt_id": "prompt-a83bace48fe2",
+  "scene_asset_uri": "seedance://prompt-pack-9a9c5c71eaf7/68745f16da0c.mp4",
+  "seedance_profile": "seedance-quality-v1",
+  "source_prompt_text": "Generate an original body scene for topic 'monetization workflow hardening mock-en-us-youtube' using this beat: keep claims specific and evidence-backed with concrete wording. Keep visuals transformed and avoid source shot reuse."
+}

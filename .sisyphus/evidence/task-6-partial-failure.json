@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "both_platform_receipts_persisted": true,
+    "overall_marked_retryable": true,
+    "tiktok_retryable_failure": true,
+    "youtube_success": true
+  },
+  "platform_receipts": [
+    {
+      "idempotency_key": "publish-task6-partial-001",
+      "platform": "youtube",
+      "platform_post_id": "youtube-post-ed4ec6b71d8c",
+      "publish_status": "success",
+      "published_at": "2026-02-16T12:02:00Z",
+      "receipt_id": "receipt-ddd94e44623b",
+      "variant_id": "variant-task6-partial"
+    },
+    {
+      "idempotency_key": "publish-task6-partial-001",
+      "platform": "tiktok",
+      "platform_post_id": "tiktok-receipt-15abdb4ce087",
+      "publish_status": "failed_retryable",
+      "published_at": "2026-02-16T12:02:00Z",
+      "receipt_id": "receipt-a3cabaf9c115",
+      "variant_id": "variant-task6-partial"
+    }
+  ],
+  "response": {
+    "idempotency_key": "publish-task6-partial-001",
+    "platform_receipts": [
+      {
+        "idempotency_key": "publish-task6-partial-001",
+        "platform": "youtube",
+        "platform_post_id": "youtube-post-ed4ec6b71d8c",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:02:00Z",
+        "receipt_id": "receipt-ddd94e44623b",
+        "variant_id": "variant-task6-partial"
+      },
+      {
+        "idempotency_key": "publish-task6-partial-001",
+        "platform": "tiktok",
+        "platform_post_id": "tiktok-receipt-15abdb4ce087",
+        "publish_status": "failed_retryable",
+        "published_at": "2026-02-16T12:02:00Z",
+        "receipt_id": "receipt-a3cabaf9c115",
+        "variant_id": "variant-task6-partial"
+      }
+    ],
+    "result_code": "PUBLISH_PARTIAL_RETRYABLE",
+    "scheduled_for": "2026-02-16T12:00:00Z",
+    "status": "publish_partial_retryable",
+    "variant_id": "variant-task6-partial"
+  },
+  "scenario": "partial_failure_is_isolated_per_platform"
+}

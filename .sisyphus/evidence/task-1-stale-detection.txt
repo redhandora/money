@@ -1,0 +1,7 @@
+[cmd] cp .sisyphus/research/policy-snapshot-2026Q1.md .sisyphus/evidence/task-1-stale-test.md
+PASS stale test copy created
+
+[cmd] grep -E "Fetched: 202[0-4]-" .sisyphus/evidence/task-1-stale-test.md
+- Fetched: 2024-01-01
+stale_match_count=1
+PASS stale evidence detected and flaggable

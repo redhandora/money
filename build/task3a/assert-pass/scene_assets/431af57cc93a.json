@@ -1,0 +1,9 @@
+{
+  "asset_id": "431af57cc93a",
+  "duration_ms": 1600,
+  "engine": "seedance",
+  "prompt_id": "prompt-6231682b0b44",
+  "scene_asset_uri": "seedance://prompt-pack-782523e69e70/431af57cc93a.mp4",
+  "seedance_profile": "seedance-default-v1",
+  "source_prompt_text": "Generate an original cta scene for topic 'budget meal prep sequence' using this beat: end with a one-click shopping reminder and weekly reset. Keep visuals transformed and avoid source shot reuse."
+}

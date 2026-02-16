@@ -1,0 +1,9 @@
+{
+  "asset_id": "52ebd3442c56",
+  "duration_ms": 1300,
+  "engine": "seedance",
+  "prompt_id": "prompt-916f002c154c",
+  "scene_asset_uri": "seedance://prompt-pack-9a9c5c71eaf7/52ebd3442c56.mp4",
+  "seedance_profile": "seedance-quality-v1",
+  "source_prompt_text": "Generate an original hook scene for topic 'monetization workflow hardening mock-en-us-youtube' using this beat: identify one controllable variable before posting and show the baseline. Keep visuals transformed and avoid source shot reuse."
+}

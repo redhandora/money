@@ -1,0 +1,20 @@
+Task 0 CI static validation
+Date: 2026-02-16
+
+Workflow file:
+- .github/workflows/python-ci.yml
+
+Static command checks (grep):
+- Found `ruff check .` at .github/workflows/python-ci.yml:25
+- Found `mypy .` at .github/workflows/python-ci.yml:28
+- Found `pytest -q` at .github/workflows/python-ci.yml:31
+
+LSP diagnostics check on changed Python files:
+- src/money/__init__.py: BLOCKED (basedpyright-langserver not installed)
+- tests/test_bootstrap.py: BLOCKED (basedpyright-langserver not installed)
+- setup.py: BLOCKED (basedpyright-langserver not installed)
+- src/money/contracts/__init__.py: BLOCKED (basedpyright-langserver not installed)
+
+Result:
+- CI lint/type/test command presence: PASS
+- Local LSP diagnostics availability: BLOCKED by missing language server installation

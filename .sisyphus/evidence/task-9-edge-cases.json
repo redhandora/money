@@ -1,0 +1,203 @@
+{
+  "checks": {
+    "cost_negative_gate_passes": true,
+    "dst_slotting_deterministic": true,
+    "duplicate_trend_is_idempotent": true,
+    "human_gate_enforced_all_publish_paths": true,
+    "partial_publish_success_reported": true,
+    "policy_negative_gate_passes": true,
+    "provider_outage_bounded_failure": true,
+    "stale_approval_publish_blocked": true
+  },
+  "cost_negative": {
+    "reason_code": "PER_VIDEO_BUDGET_EXCEEDED",
+    "state": "halted_cost_cap"
+  },
+  "dst_slotting": {
+    "after_transition_result": "PASS",
+    "before_transition_result": "PASS",
+    "timestamps": [
+      "2026-03-08T13:30:00Z",
+      "2026-11-01T14:30:00Z"
+    ]
+  },
+  "duplicate_trend": {
+    "candidate_id": "trend-4e4cbff19abb",
+    "first_created": true,
+    "second_created": false
+  },
+  "human_gate": {
+    "routes": [
+      {
+        "error_code": "HUMAN_APPROVAL_REQUIRED",
+        "mode": "mock",
+        "passes": true,
+        "platform": "youtube"
+      },
+      {
+        "error_code": "HUMAN_APPROVAL_REQUIRED",
+        "mode": "mock",
+        "passes": true,
+        "platform": "tiktok"
+      },
+      {
+        "error_code": "HUMAN_APPROVAL_REQUIRED",
+        "mode": "live-safe",
+        "passes": true,
+        "platform": "youtube"
+      },
+      {
+        "error_code": "HUMAN_APPROVAL_REQUIRED",
+        "mode": "live-safe",
+        "passes": true,
+        "platform": "tiktok"
+      }
+    ]
+  },
+  "partial_publish": {
+    "platform_receipts": [
+      {
+        "idempotency_key": "task9-partial-001",
+        "platform": "youtube",
+        "platform_post_id": "youtube-post-075c4823a0b4",
+        "publish_status": "success",
+        "published_at": "2026-02-16T12:00:00Z",
+        "receipt_id": "receipt-526a440f0157",
+        "variant_id": "variant-task9-partial"
+      },
+      {
+        "idempotency_key": "task9-partial-001",
+        "platform": "tiktok",
+        "platform_post_id": "tiktok-receipt-05256fc7bb5b",
+        "publish_status": "failed_retryable",
+        "published_at": "2026-02-16T12:00:00Z",
+        "receipt_id": "receipt-1b10151c7304",
+        "variant_id": "variant-task9-partial"
+      }
+    ],
+    "result_code": "PUBLISH_PARTIAL_RETRYABLE",
+    "status": "publish_partial_retryable"
+  },
+  "policy_negative": {
+    "policy_code": "POLICY_BLOCKED_CATEGORY",
+    "status": "blocked_policy"
+  },
+  "provider_outage": {
+    "attempt_trace": [
+      {
+        "attempt_number": 1,
+        "cost_usd": 0.25,
+        "daily_spend_usd": 0.25,
+        "reason_code": "PASS",
+        "result_code": "PASS",
+        "seedance_profile": null,
+        "stage": "trend_ingestion",
+        "status": "success",
+        "workflow_cost_usd": 0.25
+      },
+      {
+        "attempt_number": 1,
+        "cost_usd": 0.8,
+        "daily_spend_usd": 1.05,
+        "reason_code": "PASS",
+        "result_code": "PASS",
+        "seedance_profile": null,
+        "stage": "script_generation",
+        "status": "success",
+        "workflow_cost_usd": 1.05
+      },
+      {
+        "attempt_number": 1,
+        "cost_usd": 1.6,
+        "daily_spend_usd": 2.65,
+        "reason_code": "PASS",
+        "result_code": "PASS",
+        "seedance_profile": "seedance-quality-v1",
+        "stage": "scene_generation",
+        "status": "success",
+        "workflow_cost_usd": 2.65
+      },
+      {
+        "attempt_number": 1,
+        "cost_usd": 0.55,
+        "daily_spend_usd": 3.2,
+        "reason_code": "PASS",
+        "result_code": "PASS",
+        "seedance_profile": null,
+        "stage": "localization",
+        "status": "success",
+        "workflow_cost_usd": 3.2
+      },
+      {
+        "attempt_number": 1,
+        "cost_usd": 0.0,
+        "daily_spend_usd": 3.2,
+        "reason_code": "PASS",
+        "result_code": "PASS",
+        "seedance_profile": null,
+        "stage": "review",
+        "status": "success",
+        "workflow_cost_usd": 3.2
+      },
+      {
+        "attempt_number": 1,
+        "cost_usd": 0.05,
+        "daily_spend_usd": 3.25,
+        "reason_code": "PUBLISH_PROVIDER_OUTAGE",
+        "result_code": "PUBLISH_PROVIDER_OUTAGE",
+        "seedance_profile": null,
+        "stage": "publish",
+        "status": "retryable_failure",
+        "workflow_cost_usd": 3.25
+      },
+      {
+        "attempt_number": 2,
+        "cost_usd": 0.05,
+        "daily_spend_usd": 3.3,
+        "reason_code": "PUBLISH_PROVIDER_OUTAGE",
+        "result_code": "PUBLISH_PROVIDER_OUTAGE",
+        "seedance_profile": null,
+        "stage": "publish",
+        "status": "retryable_failure",
+        "workflow_cost_usd": 3.3
+      },
+      {
+        "attempt_number": 3,
+        "cost_usd": 0.05,
+        "daily_spend_usd": 3.35,
+        "reason_code": "PUBLISH_PROVIDER_OUTAGE",
+        "result_code": "PUBLISH_PROVIDER_OUTAGE",
+        "seedance_profile": null,
+        "stage": "publish",
+        "status": "retryable_failure",
+        "workflow_cost_usd": 3.35
+      }
+    ],
+    "reason_code": "RETRY_CEILING_REACHED",
+    "result_code": "FAILED_RETRY_EXHAUSTED",
+    "retry_trace": [
+      {
+        "backoff_seconds": 2,
+        "reason_code": "PUBLISH_PROVIDER_OUTAGE",
+        "result_code": "PUBLISH_PROVIDER_OUTAGE",
+        "retry_index": 1,
+        "seedance_profile": null,
+        "stage": "publish"
+      },
+      {
+        "backoff_seconds": 4,
+        "reason_code": "PUBLISH_PROVIDER_OUTAGE",
+        "result_code": "PUBLISH_PROVIDER_OUTAGE",
+        "retry_index": 2,
+        "seedance_profile": null,
+        "stage": "publish"
+      }
+    ],
+    "state": "failed_retry_exhausted"
+  },
+  "scenario": "task9_edge_case_hardening",
+  "stale_approval": {
+    "expected_block_code": "HUMAN_APPROVAL_REQUIRED",
+    "publish_block_code": "HUMAN_APPROVAL_REQUIRED"
+  }
+}

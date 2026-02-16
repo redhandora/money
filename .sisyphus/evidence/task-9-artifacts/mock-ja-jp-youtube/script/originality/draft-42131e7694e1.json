@@ -1,0 +1,11 @@
+{
+  "candidate_id": "trend-task9-mock-ja-jp-youtube",
+  "draft_id": "draft-42131e7694e1",
+  "locale": "JA-JP",
+  "originality_score": 0.7872,
+  "originality_threshold": 0.8,
+  "reference_count": 6,
+  "result_code": "PASS",
+  "similarity_score": 0.2128,
+  "similarity_trace_id": "trace-357ae226f6a9"
+}

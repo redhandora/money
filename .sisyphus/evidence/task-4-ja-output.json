@@ -1,0 +1,47 @@
+{
+  "input": {
+    "declared_categories": [
+      "educational_general"
+    ],
+    "locale": "JA-JP",
+    "similarity_score": 0.44
+  },
+  "result": {
+    "language_tag": "ja-JP",
+    "locale": "JA-JP",
+    "policy": {
+      "block_code": "PASS::PASS::PASS",
+      "categories": [
+        "educational_general"
+      ],
+      "originality_threshold": 0.8,
+      "policy_code": "PASS",
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "similarity_score": 0.44,
+      "status": "policy_passed"
+    },
+    "result_code": "PASS",
+    "status": "ready_for_review",
+    "transcreation_notes": "Japanese adaptation rewrites cadence and claim strength for policy-safe tone.",
+    "variant": {
+      "draft_id": "draft-004",
+      "locale": "JA-JP",
+      "localized_script": "\u5192\u982d\u3067\u8981\u70b9\u3092\u5171\u6709\u3057\u307e\u3059: Three mistakes creators make when trying to grow revenue fast\u3002\nUse a repeatable workflow, measure retention by segment, and avoid \u78ba\u5b9f wealth promises\u3002\u8a87\u5f35\u8868\u73fe\u3092\u907f\u3051\u3001\u518d\u73fe\u3067\u304d\u308b\u624b\u9806\u306b\u6574\u3048\u307e\u3059\u3002\n\u6b21\u306e\u4e00\u6b69: Save this checklist and test one change today\u3002",
+      "policy_categories": [
+        "educational_general"
+      ],
+      "policy_result_code": "PASS",
+      "variant_id": "draft-004-ja-jp",
+      "voice_style": "neutral"
+    },
+    "voiceover": {
+      "asset_path": "build/voiceovers/ja-jp/draft-004-ja-jp.wav",
+      "duration_ms": 21474,
+      "language_tag": "ja-JP",
+      "provider": "seedance-tts-sim",
+      "voice_profile": "haruka-jp-neutral-v1"
+    }
+  },
+  "scenario": "ja_jp_localization_voiceover"
+}

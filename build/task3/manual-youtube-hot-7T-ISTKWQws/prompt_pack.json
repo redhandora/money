@@ -1,0 +1,89 @@
+{
+  "beat_windows": [
+    {
+      "beat_index": 1,
+      "end_ms": 1300,
+      "start_ms": 0
+    },
+    {
+      "beat_index": 2,
+      "end_ms": 3300,
+      "start_ms": 1300
+    },
+    {
+      "beat_index": 3,
+      "end_ms": 5200,
+      "start_ms": 3300
+    }
+  ],
+  "candidate_id": "trend-e58e53d1c7b2",
+  "locale": "EN-US",
+  "prompt_pack_id": "prompt-pack-b542925f34ed",
+  "quality_checks": {
+    "ambiguity_score": 0.0,
+    "ambiguity_threshold": 0.15,
+    "policy_pass": true,
+    "policy_violations": [],
+    "schema_valid": true
+  },
+  "rhythm_fidelity_target": "medium_high",
+  "scene_prompts": [
+    {
+      "beat_index": 1,
+      "beat_window_ms": {
+        "end_ms": 1300,
+        "start_ms": 0
+      },
+      "prompt_id": "prompt-d60bd3d0c5d4",
+      "prompt_text": "Generate an original hook scene for topic 'youtube shorts trend discovery in 2026' using this beat: start by scanning shorts feed patterns and identify repeated high retention hooks. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "hook",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1300
+    },
+    {
+      "beat_index": 2,
+      "beat_window_ms": {
+        "end_ms": 3300,
+        "start_ms": 1300
+      },
+      "prompt_id": "prompt-5c173c5fe5e5",
+      "prompt_text": "Generate an original body scene for topic 'youtube shorts trend discovery in 2026' using this beat: validate trend candidates with niche relevance and fast repeatable production format. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "body",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 2000
+    },
+    {
+      "beat_index": 3,
+      "beat_window_ms": {
+        "end_ms": 5200,
+        "start_ms": 3300
+      },
+      "prompt_id": "prompt-ae48d72a560a",
+      "prompt_text": "Generate an original cta scene for topic 'youtube shorts trend discovery in 2026' using this beat: close with a practical upload test loop and metrics check for rapid iteration. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "cta",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1900
+    }
+  ],
+  "schema_version": "2026-02-16",
+  "seedance_profile_id": "seedance-default-v1",
+  "shot_duration_constraints": {
+    "max_jump_ratio": 2.5,
+    "max_ms": 1800,
+    "max_whiplash_per_8s": 2,
+    "min_ms": 700
+  },
+  "source_summary_id": "summary-5b8cf0c5d482"
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "trend-derivative-001",
+  "draft_id": "draft-e453142e1274",
+  "locale": "EN-US",
+  "originality_score": 0.0,
+  "originality_threshold": 0.8,
+  "reference_count": 1,
+  "result_code": "BLOCKED_ORIGINALITY",
+  "similarity_score": 1.0,
+  "similarity_trace_id": "trace-923e54f77af7"
+}

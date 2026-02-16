@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "first_decision_saved": true,
+    "immutable_error_code": true,
+    "second_decision_blocked": true,
+    "single_decision_recorded": true
+  },
+  "decision_list": {
+    "count": 1,
+    "http_status": 200,
+    "items": [
+      {
+        "decision": "approved",
+        "decision_code": "APPROVED_MANUAL_REVIEW",
+        "decision_id": "decision-e1f10e1c85a0",
+        "reviewed_at": "2026-02-16T01:00:00Z",
+        "reviewer_id": "validator-reviewer",
+        "variant_id": "variant-en-us-001"
+      }
+    ]
+  },
+  "first_response": {
+    "decision_id": "decision-e1f10e1c85a0",
+    "http_status": 200,
+    "result_code": "PASS",
+    "status": "decision_saved"
+  },
+  "scenario": "decision_log_is_immutable",
+  "second_response": {
+    "error_code": "REVIEW_DECISION_IMMUTABLE",
+    "http_status": 409,
+    "result_code": "REVIEW_DECISION_IMMUTABLE",
+    "status": "blocked"
+  }
+}

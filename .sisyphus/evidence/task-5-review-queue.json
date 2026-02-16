@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "all_required_fields_present": true,
+    "has_pending_item": true,
+    "required_fields_present": {
+      "cost": true,
+      "locale": true,
+      "originality": true,
+      "policy": true
+    }
+  },
+  "response": {
+    "http_status": 200,
+    "item_count": 1,
+    "result_code": "PASS",
+    "status": "ok"
+  },
+  "sample_item": {
+    "cost": {
+      "currency": "USD",
+      "estimated_usd": 2.75
+    },
+    "decision_id": null,
+    "expires_at": "2026-02-17T00:00:00Z",
+    "locale": "EN-US",
+    "originality": {
+      "result_code": "PASS",
+      "similarity_score": 0.44,
+      "threshold": 0.8
+    },
+    "policy": {
+      "policy_code": "PASS",
+      "result_code": "PASS"
+    },
+    "publish_eligible": false,
+    "queued_at": "2026-02-16T00:00:00Z",
+    "review_item_id": "review-7cba58796c82",
+    "status": "pending",
+    "updated_at": "2026-02-16T00:00:00Z",
+    "variant_id": "variant-en-us-001"
+  },
+  "scenario": "queue_returns_pending_localized_variants"
+}

@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://money.local/schemas/pipeline-contracts.schema.json",
+  "title": "Monetization Pipeline Contracts",
+  "type": "object",
+  "properties": {
+    "entity": {
+      "type": "string",
+      "enum": [
+        "trend_candidate",
+        "script_draft",
+        "localized_variant",
+        "approval_decision",
+        "publish_receipt",
+        "revenue_event"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "entity",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "locale_code": {
+      "type": "string",
+      "enum": [
+        "EN-US",
+        "EN-SEA",
+        "JA-JP"
+      ]
+    },
+    "result_code": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "BLOCKED_CONTRACT",
+        "BLOCKED_POLICY",
+        "BLOCKED_ORIGINALITY"
+      ]
+    },
+    "violation_code": {
+      "type": "string",
+      "enum": [
+        "CONTRACT_REQUIRED_FIELD",
+        "CONTRACT_TYPE_MISMATCH",
+        "CONTRACT_ENUM_VIOLATION",
+        "CONTRACT_ADDITIONAL_PROPERTY",
+        "POLICY_BLOCKED_CATEGORY",
+        "POLICY_BLOCKED_REASON",
+        "POLICY_LOCALE_UNSUPPORTED",
+        "POLICY_SIMILARITY_THRESHOLD_EXCEEDED"
+      ]
+    },
+    "trend_candidate": {
+      "type": "object",
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_platform": {
+          "type": "string",
+          "enum": [
+            "youtube",
+            "tiktok"
+          ]
+        },
+        "external_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 3
+        },
+        "signal_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "captured_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "source_platform",
+        "external_id",
+        "topic",
+        "signal_score",
+        "captured_at"
+      ],
+      "additionalProperties": false
+    },
+    "script_draft": {
+      "type": "object",
+      "properties": {
+        "draft_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "$ref": "#/$defs/locale_code"
+        },
+        "hook": {
+          "type": "string",
+          "minLength": 5
+        },
+        "body": {
+          "type": "string",
+          "minLength": 20
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 3
+        },
+        "originality_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "similarity_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "similarity_trace_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result_code": {
+          "$ref": "#/$defs/result_code"
+        }
+      },
+      "required": [
+        "draft_id",
+        "candidate_id",
+        "locale",
+        "hook",
+        "body",
+        "cta",
+        "originality_threshold",
+        "similarity_score",
+        "similarity_trace_id",
+        "result_code"
+      ],
+      "additionalProperties": false
+    },
+    "localized_variant": {
+      "type": "object",
+      "properties": {
+        "variant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "draft_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "$ref": "#/$defs/locale_code"
+        },
+        "localized_script": {
+          "type": "string",
+          "minLength": 20
+        },
+        "voice_style": {
+          "type": "string",
+          "enum": [
+            "neutral",
+            "energetic",
+            "conversational"
+          ]
+        },
+        "policy_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "policy_result_code": {
+          "$ref": "#/$defs/result_code"
+        }
+      },
+      "required": [
+        "variant_id",
+        "draft_id",
+        "locale",
+        "localized_script",
+        "voice_style",
+        "policy_categories",
+        "policy_result_code"
+      ],
+      "additionalProperties": false
+    },
+    "approval_decision": {
+      "type": "object",
+      "properties": {
+        "decision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "rejected",
+            "expired"
+          ]
+        },
+        "decision_code": {
+          "type": "string",
+          "enum": [
+            "APPROVED_MANUAL_REVIEW",
+            "REJECTED_POLICY",
+            "REJECTED_ORIGINALITY",
+            "EXPIRED_SLA"
+          ]
+        },
+        "reviewer_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "decision_id",
+        "variant_id",
+        "decision",
+        "decision_code",
+        "reviewer_id",
+        "reviewed_at"
+      ],
+      "additionalProperties": false
+    },
+    "publish_receipt": {
+      "type": "object",
+      "properties": {
+        "receipt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "enum": [
+            "youtube",
+            "tiktok"
+          ]
+        },
+        "publish_status": {
+          "type": "string",
+          "enum": [
+            "success",
+            "failed_retryable",
+            "failed_terminal"
+          ]
+        },
+        "platform_post_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "idempotency_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "receipt_id",
+        "variant_id",
+        "platform",
+        "publish_status",
+        "platform_post_id",
+        "idempotency_key",
+        "published_at"
+      ],
+      "additionalProperties": false
+    },
+    "revenue_event": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "receipt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "$ref": "#/$defs/locale_code"
+        },
+        "platform": {
+          "type": "string",
+          "enum": [
+            "youtube",
+            "tiktok"
+          ]
+        },
+        "gross_revenue": {
+          "type": "number",
+          "minimum": 0
+        },
+        "net_revenue": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "enum": [
+            "USD",
+            "JPY"
+          ]
+        },
+        "event_timestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "event_id",
+        "receipt_id",
+        "locale",
+        "platform",
+        "gross_revenue",
+        "net_revenue",
+        "currency",
+        "event_timestamp"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

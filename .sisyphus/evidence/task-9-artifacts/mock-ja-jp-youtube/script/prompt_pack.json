@@ -1,0 +1,89 @@
+{
+  "beat_windows": [
+    {
+      "beat_index": 1,
+      "end_ms": 1300,
+      "start_ms": 0
+    },
+    {
+      "beat_index": 2,
+      "end_ms": 2900,
+      "start_ms": 1300
+    },
+    {
+      "beat_index": 3,
+      "end_ms": 4300,
+      "start_ms": 2900
+    }
+  ],
+  "candidate_id": "trend-task9-mock-ja-jp-youtube",
+  "locale": "JA-JP",
+  "prompt_pack_id": "prompt-pack-c2cd40c90e7f",
+  "quality_checks": {
+    "ambiguity_score": 0.0,
+    "ambiguity_threshold": 0.15,
+    "policy_pass": true,
+    "policy_violations": [],
+    "schema_valid": true
+  },
+  "rhythm_fidelity_target": "medium_high",
+  "scene_prompts": [
+    {
+      "beat_index": 1,
+      "beat_window_ms": {
+        "end_ms": 1300,
+        "start_ms": 0
+      },
+      "prompt_id": "prompt-6b25b4e38c3c",
+      "prompt_text": "Generate an original hook scene for topic 'monetization workflow hardening mock-ja-jp-youtube' using this beat: identify one controllable variable before posting and show the baseline. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "hook",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1300
+    },
+    {
+      "beat_index": 2,
+      "beat_window_ms": {
+        "end_ms": 2900,
+        "start_ms": 1300
+      },
+      "prompt_id": "prompt-78651d498ada",
+      "prompt_text": "Generate an original body scene for topic 'monetization workflow hardening mock-ja-jp-youtube' using this beat: keep claims specific and evidence-backed with concrete wording. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "body",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1600
+    },
+    {
+      "beat_index": 3,
+      "beat_window_ms": {
+        "end_ms": 4300,
+        "start_ms": 2900
+      },
+      "prompt_id": "prompt-ed493edb7635",
+      "prompt_text": "Generate an original cta scene for topic 'monetization workflow hardening mock-ja-jp-youtube' using this beat: close with a single measurable action viewers can execute today. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "cta",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1400
+    }
+  ],
+  "schema_version": "2026-02-16",
+  "seedance_profile_id": "seedance-default-v1",
+  "shot_duration_constraints": {
+    "max_jump_ratio": 2.5,
+    "max_ms": 1800,
+    "max_whiplash_per_8s": 2,
+    "min_ms": 700
+  },
+  "source_summary_id": "summary-efdfd178b2af"
+}

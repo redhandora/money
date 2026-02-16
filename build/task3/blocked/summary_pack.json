@@ -1,0 +1,63 @@
+{
+  "analysis_only": true,
+  "beat_map": [
+    {
+      "beat_index": 1,
+      "duration_ms": 1300,
+      "end_ms": 1300,
+      "segment_id": "seg-1",
+      "start_ms": 0
+    },
+    {
+      "beat_index": 2,
+      "duration_ms": 1800,
+      "end_ms": 3100,
+      "segment_id": "seg-2",
+      "start_ms": 1300
+    },
+    {
+      "beat_index": 3,
+      "duration_ms": 1600,
+      "end_ms": 4700,
+      "segment_id": "seg-3",
+      "start_ms": 3100
+    }
+  ],
+  "candidate_id": "trend-derivative-001",
+  "factual_quality": {
+    "factual_precision": 1.0,
+    "hallucination_rate": 0.0,
+    "hallucination_threshold": 0.02,
+    "passes": true,
+    "precision_threshold": 0.95
+  },
+  "keypoints": [
+    {
+      "order": 1,
+      "role": "hook",
+      "source_segment_id": "seg-1",
+      "text": "audit one pantry category first and show the price delta"
+    },
+    {
+      "order": 2,
+      "role": "body",
+      "source_segment_id": "seg-2",
+      "text": "batch prep two protein options to cut weekday spend drift"
+    },
+    {
+      "order": 3,
+      "role": "cta",
+      "source_segment_id": "seg-3",
+      "text": "end with a one-click shopping reminder and weekly reset"
+    }
+  ],
+  "locale": "EN-US",
+  "pacing_map": {
+    "max_duration_jump_ratio": 1.3846,
+    "total_duration_ms": 4700
+  },
+  "schema_version": "2026-02-16",
+  "source_analysis_id": "analysis-segments-001",
+  "summary_id": "summary-ee217e82e996",
+  "topic": "budget meal prep sequence"
+}

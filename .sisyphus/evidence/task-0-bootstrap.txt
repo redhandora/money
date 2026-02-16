@@ -1,0 +1,29 @@
+Task 0 bootstrap verification
+Date: 2026-02-16
+
+Repository setup created:
+- pyproject.toml (pytest/ruff/mypy configuration)
+- setup.py (legacy setuptools compatibility for local Python 3.6 environment)
+- src/money/__init__.py
+- tests/test_bootstrap.py
+- .github/workflows/python-ci.yml
+
+Commands executed and outcomes:
+1) python3 --version
+   - Outcome: Python 3.6.8
+
+2) .venv/bin/python -m pip install "pytest==6.2.5" "mypy==0.971"
+   - Outcome: success
+
+3) PYTHONPATH=src .venv/bin/pytest -q
+   - Outcome: PASS (1 passed)
+
+4) PYTHONPATH=src .venv/bin/mypy .
+   - Outcome: PASS (Success: no issues found in 4 source files)
+
+5) .venv/bin/ruff check .
+   - Outcome: BLOCKED in this environment (ruff unavailable for Python 3.6 toolchain; modern ruff build dependency incompatibility)
+
+Notes:
+- Local environment provides Python 3.6 only.
+- CI workflow is configured to run on Python 3.11 with ruff, mypy, and pytest gates.

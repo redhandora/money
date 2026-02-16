@@ -1,0 +1,128 @@
+{
+  "checks": {
+    "fidelity_gate_pass": true
+  },
+  "routes": [
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "mock",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "mock",
+        "platform": "tiktok"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "mock",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "mock",
+        "platform": "tiktok"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "mock",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "mock",
+        "platform": "tiktok"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "live-safe",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "live-safe",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "live-safe",
+        "platform": "youtube"
+      }
+    },
+    {
+      "beat_count_match": true,
+      "duration_delta_ms": 0,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      }
+    }
+  ],
+  "scenario": "task9_fidelity_gate"
+}

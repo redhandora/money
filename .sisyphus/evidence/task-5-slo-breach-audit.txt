@@ -1,0 +1,5 @@
+Scenario: SLO without breach action fails
+File: .sisyphus/research/unit-economics-and-slo.md
+SLO rows found: 4
+Required present: {'Time-to-publish': True, 'Quality score': True, 'Incident MTTR': True, 'Policy strike budget': True}
+Result: PASS

@@ -1,0 +1,8 @@
+{
+  "entity": "trend_candidate",
+  "error_code": "CONTRACT_REQUIRED_FIELD",
+  "error_field": "topic",
+  "result_code": "BLOCKED_CONTRACT",
+  "scenario": "contract_invalid",
+  "status": "rejected"
+}

@@ -1,0 +1,714 @@
+{
+  "checks": {
+    "all_routes_publish_success": true,
+    "happy_path_passes_all_locales": true,
+    "route_count_matches_full_matrix": true
+  },
+  "happy_path_by_locale": {
+    "EN-SEA": true,
+    "EN-US": true,
+    "JA-JP": true
+  },
+  "matrix": {
+    "locales": [
+      "EN-US",
+      "EN-SEA",
+      "JA-JP"
+    ],
+    "modes": [
+      "mock",
+      "live-safe"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "routes": [
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-ed3a3213836c-en-us",
+          "voiceover_duration_ms": 25467
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7872
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-US",
+          "mode": "mock",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-ed3a3213836c",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2128
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-en-us-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-fe54da355662-en-us",
+          "voiceover_duration_ms": 25400
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7872
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-US",
+          "mode": "mock",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-fe54da355662",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2128
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-en-us-tiktok"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-50c6b6b88edf-en-sea",
+          "voiceover_duration_ms": 29000
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-SEA",
+          "mode": "mock",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-50c6b6b88edf",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-en-sea-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-cf9326cbdc4c-en-sea",
+          "voiceover_duration_ms": 28929
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-SEA",
+          "mode": "mock",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-cf9326cbdc4c",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-en-sea-tiktok"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-42131e7694e1-ja-jp",
+          "voiceover_duration_ms": 37158
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7872
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "JA-JP",
+          "mode": "mock",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-42131e7694e1",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2128
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-ja-jp-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-9447fd84e35d-ja-jp",
+          "voiceover_duration_ms": 37053
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7872
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "JA-JP",
+          "mode": "mock",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-quality-v1"
+        },
+        "script": {
+          "draft_id": "draft-9447fd84e35d",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2128
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-mock-ja-jp-tiktok"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-63afbcabaa21-en-us",
+          "voiceover_duration_ms": 25800
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-US",
+          "mode": "live-safe",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-63afbcabaa21",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-en-us-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-0d6a17462aa1-en-us",
+          "voiceover_duration_ms": 25733
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-US",
+          "mode": "live-safe",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-0d6a17462aa1",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-en-us-tiktok"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-6ebf701be9e1-en-sea",
+          "voiceover_duration_ms": 29357
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7959
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-SEA",
+          "mode": "live-safe",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-6ebf701be9e1",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2041
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-en-sea-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-0b90893f46ff-en-sea",
+          "voiceover_duration_ms": 29286
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7959
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "EN-SEA",
+          "mode": "live-safe",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-0b90893f46ff",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2041
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-en-sea-tiktok"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-b2dae337cd61-ja-jp",
+          "voiceover_duration_ms": 37684
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "JA-JP",
+          "mode": "live-safe",
+          "platform": "youtube"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-b2dae337cd61",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-ja-jp-youtube"
+        }
+      },
+      {
+        "localization": {
+          "result_code": "PASS",
+          "variant_id": "draft-5df890cf47c7-ja-jp",
+          "voiceover_duration_ms": 37579
+        },
+        "publish": {
+          "receipt_count": 1,
+          "result_code": "PASS",
+          "status": "published"
+        },
+        "qc": {
+          "a_mode_reuse_guard": {
+            "exact_source_frame_matches": 0,
+            "result_code": "PASS"
+          },
+          "fidelity": {
+            "beat_count_match": true,
+            "duration_delta_ms": 0
+          },
+          "thresholds": {
+            "audio_sync_error_ms": 24,
+            "av_alignment_score": 0.99,
+            "style_consistency_score": 0.96,
+            "subtitle_coverage_ratio": 1.0
+          },
+          "transformation": {
+            "exact_source_frame_matches": 0,
+            "lexical_transformation_score": 0.7917
+          }
+        },
+        "review": {
+          "decision": "approved",
+          "result_code": "PASS"
+        },
+        "route": {
+          "locale": "JA-JP",
+          "mode": "live-safe",
+          "platform": "tiktok"
+        },
+        "scene_generation": {
+          "result_code": "PASS",
+          "scene_count": 3,
+          "seedance_profile": "seedance-balanced-v1"
+        },
+        "script": {
+          "draft_id": "draft-5df890cf47c7",
+          "originality_threshold": 0.8,
+          "result_code": "PASS",
+          "similarity_score": 0.2083
+        },
+        "status": "pass",
+        "trend": {
+          "analysis_only": true,
+          "candidate_id": "trend-task9-live-safe-ja-jp-tiktok"
+        }
+      }
+    ]
+  },
+  "scenario": "task9_full_e2e_matrix"
+}

@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "decision_attempt_blocked_after_expiry": true,
+    "expiry_decision_recorded": true,
+    "item_removed_from_pending_queue": true,
+    "publish_blocked_with_human_gate_code": true
+  },
+  "decision_attempt_response": {
+    "error_code": "REVIEW_ITEM_EXPIRED",
+    "http_status": 409,
+    "result_code": "REVIEW_ITEM_EXPIRED"
+  },
+  "decision_log_response": {
+    "count": 1,
+    "entry": {
+      "decision": "expired",
+      "decision_code": "EXPIRED_SLA",
+      "decision_id": "decision-343844bfb1b4",
+      "reviewed_at": "2026-02-17T00:00:00Z",
+      "reviewer_id": "system-sla-guard",
+      "variant_id": "variant-en-us-001"
+    },
+    "http_status": 200
+  },
+  "publish_response": {
+    "error_code": "HUMAN_APPROVAL_REQUIRED",
+    "http_status": 409,
+    "result_code": "HUMAN_APPROVAL_REQUIRED"
+  },
+  "queue_response": {
+    "http_status": 200,
+    "pending_count": 0
+  },
+  "scenario": "sla_expiry_prevents_publish"
+}

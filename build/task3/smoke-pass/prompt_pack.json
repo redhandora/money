@@ -1,0 +1,89 @@
+{
+  "beat_windows": [
+    {
+      "beat_index": 1,
+      "end_ms": 1200,
+      "start_ms": 0
+    },
+    {
+      "beat_index": 2,
+      "end_ms": 3000,
+      "start_ms": 1200
+    },
+    {
+      "beat_index": 3,
+      "end_ms": 4600,
+      "start_ms": 3000
+    }
+  ],
+  "candidate_id": "trend-cli-001",
+  "locale": "EN-US",
+  "prompt_pack_id": "prompt-pack-22ef457f2c97",
+  "quality_checks": {
+    "ambiguity_score": 0.0,
+    "ambiguity_threshold": 0.15,
+    "policy_pass": true,
+    "policy_violations": [],
+    "schema_valid": true
+  },
+  "rhythm_fidelity_target": "medium_high",
+  "scene_prompts": [
+    {
+      "beat_index": 1,
+      "beat_window_ms": {
+        "end_ms": 1200,
+        "start_ms": 0
+      },
+      "prompt_id": "prompt-c95c62c0b8b1",
+      "prompt_text": "Generate an original hook scene for topic 'fridge reset workflow' using this beat: sort by expiry date first and remove waste quickly. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "hook",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1200
+    },
+    {
+      "beat_index": 2,
+      "beat_window_ms": {
+        "end_ms": 3000,
+        "start_ms": 1200
+      },
+      "prompt_id": "prompt-e362c608fefe",
+      "prompt_text": "Generate an original body scene for topic 'fridge reset workflow' using this beat: assign two prep containers for high-turn ingredients. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "body",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1800
+    },
+    {
+      "beat_index": 3,
+      "beat_window_ms": {
+        "end_ms": 4600,
+        "start_ms": 3000
+      },
+      "prompt_id": "prompt-4fabb02dfd6b",
+      "prompt_text": "Generate an original cta scene for topic 'fridge reset workflow' using this beat: finish with a next-shop checklist and weekly reminder. Keep visuals transformed and avoid source shot reuse.",
+      "script_role": "cta",
+      "seedance_profile_id": "seedance-default-v1",
+      "shot_duration_ms": {
+        "max_ms": 1800,
+        "min_ms": 700
+      },
+      "target_duration_ms": 1600
+    }
+  ],
+  "schema_version": "2026-02-16",
+  "seedance_profile_id": "seedance-default-v1",
+  "shot_duration_constraints": {
+    "max_jump_ratio": 2.5,
+    "max_ms": 1800,
+    "max_whiplash_per_8s": 2,
+    "min_ms": 700
+  },
+  "source_summary_id": "summary-1a0e9daf6487"
+}

@@ -1,0 +1,26 @@
+Scenario: Rollback trigger completeness
+Date: audit-generated
+File: .sisyphus/research/final-recommendation-and-rollout.md
+[Phase 1 - Canary]
+  Entry criteria present: True
+  Exit criteria present: True
+  Stop/rollback section present: True
+  Trigger bullets: 3
+  Action pairs: 3
+  Result: PASS
+[Phase 2 - Limited Scale]
+  Entry criteria present: True
+  Exit criteria present: True
+  Stop/rollback section present: True
+  Trigger bullets: 3
+  Action pairs: 3
+  Result: PASS
+[Phase 3 - Full Scale]
+  Entry criteria present: True
+  Exit criteria present: True
+  Stop/rollback section present: True
+  Trigger bullets: 3
+  Action pairs: 3
+  Result: PASS
+
+Overall result: PASS

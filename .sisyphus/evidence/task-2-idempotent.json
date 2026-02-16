@@ -1,0 +1,25 @@
+{
+  "result": {
+    "analysis_only": true,
+    "analysis_only_candidate_id": "trend-288f0cd2f556",
+    "beat_map_artifact": "artifacts/trend-288f0cd2f556/beat_map.json",
+    "checks": {
+      "analysis_only_tagged_and_blocked_from_publish_manifest": true,
+      "beat_and_pacing_artifacts_present": true,
+      "duplicate_trend_ids_ignored_idempotently": true,
+      "normalized_candidates_with_source_metadata": true,
+      "rate_limit_config_enforced_with_backoff": true
+    },
+    "dedupe_key_fields": [
+      "source_platform",
+      "external_id"
+    ],
+    "pacing_map_artifact": "artifacts/trend-288f0cd2f556/pacing_map.json",
+    "rate_limit_error": "rate limit exceeded; retry_after_seconds=12",
+    "record_count": 3,
+    "sample_candidate_id": "trend-c8f6fbb0060b",
+    "sample_external_id": "trend-777",
+    "status": "pass"
+  },
+  "scenario": "task2_acceptance_deterministic_validation"
+}

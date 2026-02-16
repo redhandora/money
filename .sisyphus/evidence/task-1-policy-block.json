@@ -1,0 +1,17 @@
+{
+  "input": {
+    "categories": [
+      "deceptive_before_after"
+    ],
+    "similarity_score": 0.72
+  },
+  "locale": "JA-JP",
+  "result": {
+    "blocked_category": "deceptive_before_after",
+    "policy_code": "POLICY_BLOCKED_CATEGORY",
+    "reason_code": "MEDICAL_CLAIM_UNVERIFIED",
+    "result_code": "BLOCK",
+    "status": "blocked"
+  },
+  "scenario": "policy_block_ja_jp"
+}

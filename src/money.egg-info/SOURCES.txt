@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/money/__init__.py
+src/money.egg-info/PKG-INFO
+src/money.egg-info/SOURCES.txt
+src/money.egg-info/dependency_links.txt
+src/money.egg-info/requires.txt
+src/money.egg-info/top_level.txt
+src/money/contracts/__init__.py
+src/money/contracts/validate_task1.py

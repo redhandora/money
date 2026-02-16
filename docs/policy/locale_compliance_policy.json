@@ -1,0 +1,65 @@
+{
+  "policy_version": "2026-02-16",
+  "supported_locales": [
+    "EN-US",
+    "EN-SEA",
+    "JA-JP"
+  ],
+  "result_codes": [
+    "ALLOW",
+    "BLOCK"
+  ],
+  "violation_codes": [
+    "POLICY_BLOCKED_CATEGORY",
+    "POLICY_BLOCKED_REASON",
+    "POLICY_LOCALE_UNSUPPORTED",
+    "POLICY_SIMILARITY_THRESHOLD_EXCEEDED"
+  ],
+  "reason_codes": {
+    "RISKY_FINANCIAL_PROMISE": "Unverifiable returns or guaranteed profit claim",
+    "MEDICAL_CLAIM_UNVERIFIED": "Unverified diagnosis, cure, or health treatment claim",
+    "ILLEGAL_ACTIVITY_PROMOTION": "Encouraging criminal activity or evasion",
+    "GAMBLING_SOLICITATION": "Direct solicitation for gambling participation"
+  },
+  "locale_rules": {
+    "EN-US": {
+      "blocked_categories": [
+        "medical_misinformation",
+        "guaranteed_financial_return",
+        "illegal_activity"
+      ],
+      "category_reason_code": {
+        "medical_misinformation": "MEDICAL_CLAIM_UNVERIFIED",
+        "guaranteed_financial_return": "RISKY_FINANCIAL_PROMISE",
+        "illegal_activity": "ILLEGAL_ACTIVITY_PROMOTION"
+      },
+      "originality_threshold": 0.8
+    },
+    "EN-SEA": {
+      "blocked_categories": [
+        "medical_misinformation",
+        "crypto_guarantee",
+        "gambling_promotion"
+      ],
+      "category_reason_code": {
+        "medical_misinformation": "MEDICAL_CLAIM_UNVERIFIED",
+        "crypto_guarantee": "RISKY_FINANCIAL_PROMISE",
+        "gambling_promotion": "GAMBLING_SOLICITATION"
+      },
+      "originality_threshold": 0.8
+    },
+    "JA-JP": {
+      "blocked_categories": [
+        "medical_misinformation",
+        "deceptive_before_after",
+        "illegal_activity"
+      ],
+      "category_reason_code": {
+        "medical_misinformation": "MEDICAL_CLAIM_UNVERIFIED",
+        "deceptive_before_after": "MEDICAL_CLAIM_UNVERIFIED",
+        "illegal_activity": "ILLEGAL_ACTIVITY_PROMOTION"
+      },
+      "originality_threshold": 0.8
+    }
+  }
+}

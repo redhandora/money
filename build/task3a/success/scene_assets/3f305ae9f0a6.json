@@ -1,0 +1,9 @@
+{
+  "asset_id": "3f305ae9f0a6",
+  "duration_ms": 1300,
+  "engine": "seedance",
+  "prompt_id": "prompt-167d542772bf",
+  "scene_asset_uri": "seedance://prompt-pack-782523e69e70/3f305ae9f0a6.mp4",
+  "seedance_profile": "seedance-default-v1",
+  "source_prompt_text": "Generate an original hook scene for topic 'budget meal prep sequence' using this beat: audit one pantry category first and show the price delta. Keep visuals transformed and avoid source shot reuse."
+}

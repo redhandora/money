@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "transformation_gate_pass": true
+  },
+  "routes": [
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7872,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "mock",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2128
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7872,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "mock",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2128
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "mock",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2083
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "mock",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2083
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7872,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "mock",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2128
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7872,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "mock",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2128
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "live-safe",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2083
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-US",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2083
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7959,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "live-safe",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2041
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7959,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "EN-SEA",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2041
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "live-safe",
+        "platform": "youtube"
+      },
+      "similarity_score": 0.2083
+    },
+    {
+      "exact_source_frame_matches": 0,
+      "lexical_transformation_score": 0.7917,
+      "originality_threshold": 0.8,
+      "passes": true,
+      "route": {
+        "locale": "JA-JP",
+        "mode": "live-safe",
+        "platform": "tiktok"
+      },
+      "similarity_score": 0.2083
+    }
+  ],
+  "scenario": "task9_transformation_gate"
+}

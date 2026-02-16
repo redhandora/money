@@ -1,0 +1,10 @@
+Scenario: Missing fallback option is detected
+file_check=PASS
+Ingestion managed_options=3 selfhost_options=2 total_options=5 result=PASS
+ASR managed_options=2 selfhost_options=2 total_options=4 result=PASS
+Translation managed_options=2 selfhost_options=2 total_options=4 result=PASS
+TTS managed_options=2 selfhost_options=2 total_options=4 result=PASS
+Compositing managed_options=2 selfhost_options=2 total_options=4 result=PASS
+Orchestration managed_options=2 selfhost_options=2 total_options=4 result=PASS
+Distribution managed_options=2 selfhost_options=2 total_options=4 result=PASS
+overall=PASS

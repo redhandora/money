@@ -1,0 +1,9 @@
+{
+  "asset_id": "8d616cb86e7e",
+  "duration_ms": 1300,
+  "engine": "seedance",
+  "prompt_id": "prompt-b72c5fa22b2e",
+  "scene_asset_uri": "seedance://prompt-pack-edcd5ebc8c8a/8d616cb86e7e.mp4",
+  "seedance_profile": "seedance-quality-v1",
+  "source_prompt_text": "Generate an original hook scene for topic 'monetization workflow hardening mock-ja-jp-tiktok' using this beat: identify one controllable variable before posting and show the baseline. Keep visuals transformed and avoid source shot reuse."
+}

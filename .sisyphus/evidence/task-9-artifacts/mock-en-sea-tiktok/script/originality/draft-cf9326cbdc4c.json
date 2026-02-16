@@ -1,0 +1,11 @@
+{
+  "candidate_id": "trend-task9-mock-en-sea-tiktok",
+  "draft_id": "draft-cf9326cbdc4c",
+  "locale": "EN-SEA",
+  "originality_score": 0.7917,
+  "originality_threshold": 0.8,
+  "reference_count": 6,
+  "result_code": "PASS",
+  "similarity_score": 0.2083,
+  "similarity_trace_id": "trace-8d92965f6934"
+}

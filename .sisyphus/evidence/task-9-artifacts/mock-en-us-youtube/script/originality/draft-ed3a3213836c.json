@@ -1,0 +1,11 @@
+{
+  "candidate_id": "trend-task9-mock-en-us-youtube",
+  "draft_id": "draft-ed3a3213836c",
+  "locale": "EN-US",
+  "originality_score": 0.7872,
+  "originality_threshold": 0.8,
+  "reference_count": 6,
+  "result_code": "PASS",
+  "similarity_score": 0.2128,
+  "similarity_trace_id": "trace-dd6a0a0f0562"
+}

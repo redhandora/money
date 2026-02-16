@@ -1,0 +1,6 @@
+{
+  "fallback": "deterministic_api_e2e_harness",
+  "playwright_capable": false,
+  "reason": "playwright MCP reports no discovered capabilities in this runtime",
+  "scenario": "task9_playwright_capability"
+}

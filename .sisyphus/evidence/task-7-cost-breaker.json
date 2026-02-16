@@ -1,0 +1,67 @@
+{
+  "attempt_trace": [
+    {
+      "attempt_number": 1,
+      "cost_usd": 0.45,
+      "daily_spend_usd": 0.45,
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "seedance_profile": null,
+      "stage": "trend_ingestion",
+      "status": "success",
+      "workflow_cost_usd": 0.45
+    },
+    {
+      "attempt_number": 1,
+      "cost_usd": 0.8,
+      "daily_spend_usd": 1.25,
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "seedance_profile": null,
+      "stage": "script_generation",
+      "status": "success",
+      "workflow_cost_usd": 1.25
+    },
+    {
+      "attempt_number": 1,
+      "cost_usd": 1.2,
+      "daily_spend_usd": 2.45,
+      "reason_code": "PASS",
+      "result_code": "PASS",
+      "seedance_profile": "seedance-quality-v1",
+      "stage": "scene_generation",
+      "status": "success",
+      "workflow_cost_usd": 2.45
+    }
+  ],
+  "checks": {
+    "cost_halt_reason_is_per_video": true,
+    "publish_not_attempted": true,
+    "review_not_attempted": true,
+    "state_is_halted_cost_cap": true
+  },
+  "result": {
+    "attempt_count": 3,
+    "budget_halt_event": {
+      "attempt_number": 1,
+      "daily_spend_cap_usd": 30.0,
+      "daily_spend_usd": 2.45,
+      "per_video_budget_cap_usd": 2.0,
+      "reason_code": "PER_VIDEO_BUDGET_EXCEEDED",
+      "stage": "scene_generation",
+      "workflow_cost_usd": 2.45
+    },
+    "reason_code": "PER_VIDEO_BUDGET_EXCEEDED",
+    "result_code": "HALTED_COST_CAP",
+    "state": "halted_cost_cap",
+    "state_trace": [
+      "created",
+      "trend_ingested",
+      "script_generated",
+      "halted_cost_cap"
+    ],
+    "status": "halted",
+    "workflow_cost_usd": 2.45
+  },
+  "scenario": "cost_circuit_breaker_halts_workflow"
+}

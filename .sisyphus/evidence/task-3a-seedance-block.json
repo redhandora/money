@@ -1,0 +1,13 @@
+{
+  "policy_not_passed": {
+    "message": "prompt pack quality_checks.policy_pass must be true",
+    "result_code": "BLOCKED_POLICY_NOT_PASSED",
+    "status": "blocked"
+  },
+  "scenario": "seedance_generation_blocked",
+  "schema_invalid": {
+    "message": "prompt pack schema invalid at prompt_pack.scene_prompts (PACK_REQUIRED_FIELD)",
+    "result_code": "BLOCKED_PROMPT_SCHEMA_INVALID",
+    "status": "blocked"
+  }
+}
